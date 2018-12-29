@@ -6,7 +6,7 @@ package console;
 import java.util.Scanner;
 
 /**
- * IO Methoden für die Konsolen App
+ * IO Methoden fÃ¼r die Konsolen App
  * 
  * @author Tietz
  *
@@ -18,13 +18,13 @@ public class Io {
   private static Scanner scanner = new Scanner(System.in);
 
   /**
-   * List die Eingabe der Konsole und gibt sie als Sting zurück
+   * List die Eingabe der Konsole und gibt sie als Sting zurÃ¼ck
    * 
    * @return
    */
   private static String leseEingabe() {
     String temp = scanner.nextLine();
-    // Auf abbruch vom Benutzer prüfen
+    // Auf abbruch vom Benutzer prÃ¼fen
     if (temp.equals(S.QUIT)) {
       // App beenden durch benutzer
       System.out.println(S.ABBRUCH_BENUTZER);
@@ -34,7 +34,7 @@ public class Io {
   }
 
   /**
-   * List die Eingabe der Konsole und gibt sie als Int zurück
+   * List die Eingabe der Konsole und gibt sie als Int zurÃ¼ck
    * 
    * @return
    */
@@ -50,19 +50,19 @@ public class Io {
       // cast fehlerhaft
       System.out.println(S.FEHLER_EINGABE_INTEGER);
     }
-    // eingabe ok, wert zurück geben
+    // eingabe ok, wert zurÃ¼ck geben
     return eingabe;
   }
 
   /**
-   * List die Eingabe der Konsole und gibt sie als Sting zurück
+   * List die Eingabe der Konsole und gibt sie als Sting zurÃ¼ck
    * 
    * @return
    */
   static String leseEingabeString() {
     // eingabe lesen
     String eingabe = leseEingabe();
-    // eingabe ok, wert zurück geben
+    // eingabe ok, wert zurÃ¼ck geben
     return eingabe;
   }
 

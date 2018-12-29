@@ -3,7 +3,7 @@ package view;
 import controller.IControllerEventListener;
 
 /**
- * Interface für unterschiedliche Spiele Views
+ * Interface fÃ¼r unterschiedliche Spiele Views
  * 
  * @author Tietz
  *
@@ -25,7 +25,7 @@ public interface ISpielView {
   public SPIELER_ODER_COMPUTER getWerIstAmZug();
 
   /**
-   * Anzahl der Hölzer an die View übergeben
+   * Anzahl der HÃ¶lzer an die View Ã¼bergeben
    * 
    * @param restStreichhoelzer
    */
@@ -34,15 +34,15 @@ public interface ISpielView {
   public void setIControllerEventListener(IControllerEventListener controller);
 
   /**
-   * View die Info der restliche Hölzer übergeben und Spieler zur Eingabe der
-   * Anzahl der wegzunehmenden Hölzer auffordern
+   * View die Info der restliche HÃ¶lzer Ã¼bergeben und Spieler zur Eingabe der
+   * Anzahl der wegzunehmenden HÃ¶lzer auffordern
    * 
    * @param restStreichhoelzer
    */
   public void zeigeEingabeHoelzerZiehen(int restStreichhoelzer);
 
   /**
-   * View auffordern, den Spieler die Starthölzer einzugeben
+   * View auffordern, den Spieler die StartHÃ¶lzer einzugeben
    */
   public void zeigeEingabeStarthoelzerSetzen();
 

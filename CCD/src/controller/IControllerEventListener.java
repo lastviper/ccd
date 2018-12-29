@@ -4,7 +4,7 @@
 package controller;
 
 /**
- * Interface für Rückgaben der Views (in den Views ActionListener oder
+ * Interface fÃ¼r RÃ¼ckgaben der Views (in den Views ActionListener oder
  * Benutzereingaben etc)
  * 
  * @author Tietz
@@ -13,17 +13,17 @@ package controller;
 public interface IControllerEventListener {
 
   /**
-   * Wird ausgeführt, wenn der Spieler die Anzahl Hölzer festgelegt hat
+   * Wird ausgefÃ¼hrt, wenn der Spieler die Anzahl HÃ¶lzer festgelegt hat
    */
   public void actionListenerAnzahlHoelzerGesetzt();
 
   /**
-   * Wird ausgeführt, wenn der Spieler Hözer weggenommen hat
+   * Wird ausgefÃ¼hrt, wenn der Spieler HÃ¶lzer weggenommen hat
    */
   public void actionListenerSpielerNimmtHoelzerGesetzt();
 
   /**
-   * Wird ausgeführt, wenn der Spieler gewählt hat, wer anfangen soll
+   * Wird ausgefÃ¼hrt, wenn der Spieler gewÃ¤hlt hat, wer anfangen soll
    */
   public void actionListenerWerSollAnfangenGesetzt();
 

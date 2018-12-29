@@ -69,7 +69,7 @@ public class SpielController implements IControllerEventListener {
   }
 
   /**
-   * Erster Spielzug, setzen von Anzahl Hölzern
+   * Erster Spielzug, setzen von Anzahl HÃ¶lzern
    */
   private void setAnzahlStartHoelzer() {
     // aus der View ermitteln, wer Anfangen soll, Computer oder Spieler
@@ -87,9 +87,9 @@ public class SpielController implements IControllerEventListener {
    * 
    */
   private void setStartoptionen() {
-    // Model initialisieren und Eingabedaten übermitteln
+    // Model initialisieren und Eingabedaten Ã¼bermitteln
     this.spielModel.setStartoptionen(this.spielView.getWerIstAmZug());
-    // Starthölzer ermitteln
+    // StartHÃ¶lzer ermitteln
     this.setAnzahlStartHoelzer();
   }
 
@@ -97,12 +97,12 @@ public class SpielController implements IControllerEventListener {
    * 
    */
   private void spielerPruefeEingabeMindern() {
-    // Dem Model die Anzahl übergeben und prüfen
+    // Dem Model die Anzahl Ã¼bergeben und prÃ¼fen
     if (spielModel.spielerEingabe(spielView.getEingabeAnzahl())) {
-      // Eingabe korrekt, Hölzer mindern
+      // Eingabe korrekt, HÃ¶lzer mindern
       spielZugEnde();
     } else {
-      // falsche Eingabe für Starthölzer, erneut abfragen
+      // falsche Eingabe fÃ¼r StartHÃ¶lzer, erneut abfragen
       spielZugWeiter();
     }
   }
@@ -111,11 +111,11 @@ public class SpielController implements IControllerEventListener {
    * 
    */
   private void spielerPruefeStartwert() {
-    // Dem Model die Anzahl übergeben und prüfen
+    // Dem Model die Anzahl Ã¼bergeben und prÃ¼fen
     if (spielModel.spielerEingabeStartHoelzer(spielView.getEingabeAnzahl())) {
       spielZugEnde();
     } else {
-      // falsche Eingabe für Starthölzer, erneut abfragen
+      // falsche Eingabe fÃ¼r StartHÃ¶lzer, erneut abfragen
       setAnzahlStartHoelzer();
     }
   }

@@ -1,7 +1,7 @@
 package log;
 
 /**
- * Klasse für Hilfeausgaben auf der Konsole
+ * Klasse fÃ¼r Hilfeausgaben auf der Konsole
  * 
  * @author bw1tetf0
  *

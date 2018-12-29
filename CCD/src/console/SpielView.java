@@ -18,7 +18,7 @@ public class SpielView implements ISpielView {
    */
   private SPIELER_ODER_COMPUTER werIstAmZug = null;
   /**
-   * Variable für Anzahl Hölzer
+   * Variable fÃ¼r Anzahl HÃ¶lzer
    */
   private int eingabeHoelzer = 0;
   /**
@@ -39,12 +39,12 @@ public class SpielView implements ISpielView {
    */
   @Override
   public SPIELER_ODER_COMPUTER getWerIstAmZug() {
-    // Rückgabe wer Beginnen soll
+    // RÃ¼ckgabe wer Beginnen soll
     return werIstAmZug;
   }
 
   /**
-   * {@inheritDoc} Zeigt die Anzahl der Hölzer auf der Konsole an
+   * {@inheritDoc} Zeigt die Anzahl der HÃ¶lzer auf der Konsole an
    */
   @Override
   public void setAnzahlHoeler(int restStreichhoelzer) {
@@ -64,10 +64,10 @@ public class SpielView implements ISpielView {
    * Methode zum ermitteln wer anfangen soll
    */
   private void werFaengtAn() {
-    // abfrage wer anfängt
+    // abfrage wer anfÃ¤ngt
     System.out.println(S.WER_FAENGT_AN);
 
-    // rückgabe scan
+    // rÃ¼ckgabe scan
     String eingabe = Io.leseEingabeString();
 
     // Eingabe auswerten
@@ -79,11 +79,11 @@ public class SpielView implements ISpielView {
    */
   @Override
   public void zeigeEingabeHoelzerZiehen(int restStreichhoelzer) {
-    // Aktuelle Hölzeranzahl zeigen
+    // Aktuelle HÃ¶lzeranzahl zeigen
     System.out.println(S.SPIELER_INFO_ANZAHL_HOELZER + Integer.toString(restStreichhoelzer));
-    // Spieler gibt die Anzahl der Hölzer ein die abgezogen werden
+    // Spieler gibt die Anzahl der HÃ¶lzer ein die abgezogen werden
     System.out.println(S.SPIELER_EINGABE_ABZIEHEN);
-    // Anzahl der Hölzer abfragen
+    // Anzahl der HÃ¶lzer abfragen
     eingabeHoelzer = Io.leseEingabeInt();
     // Controller Methode als ActionListener ersatz aufrufen
     eventListener.actionListenerSpielerNimmtHoelzerGesetzt();
@@ -95,9 +95,9 @@ public class SpielView implements ISpielView {
    */
   @Override
   public void zeigeEingabeStarthoelzerSetzen() {
-    // Spieler muss die Anzahl der Hölzer setzen
+    // Spieler muss die Anzahl der HÃ¶lzer setzen
     System.out.println(S.SPIELER_FAENGT_AN);
-    // Eingabe der Hölzer abfragen
+    // Eingabe der HÃ¶lzer abfragen
     eingabeHoelzer = Io.leseEingabeInt();
     // Controller Methode als ActionListener ersatz aufrufen
     eventListener.actionListenerAnzahlHoelzerGesetzt();

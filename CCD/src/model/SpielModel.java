@@ -24,8 +24,8 @@ public class SpielModel {
   private boolean spielEnde = true;
 
   /**
-   * Streichhölzer berechnen die vom Computer vorgegebenw erden sollen, dies muss
-   * n-Faches von min + max wegnehmbaren Hölzern sein. Basis ist eine Ganzzahl
+   * StreichHÃ¶lzer berechnen die vom Computer vorgegebenw erden sollen, dies muss
+   * n-Faches von min + max wegnehmbaren HÃ¶lzern sein. Basis ist eine Ganzzahl
    * zwischen 1 und 10 (default)
    */
   public void computerBerechneHoelzer() {
@@ -36,7 +36,7 @@ public class SpielModel {
    * 
    */
   public void computerVermindereHoelzer() {
-    // resthölzer muss vielfaches von MIN_WEGNEHMEN + MAX_WEGNEHMEN sein
+    // restHÃ¶lzer muss vielfaches von MIN_WEGNEHMEN + MAX_WEGNEHMEN sein
     while (restStreichhoelzer % (MIN_WEGNEHMEN + MAX_WEGNEHMEN) != 0) {
       restStreichhoelzer -= MIN_WEGNEHMEN;
     }
@@ -47,7 +47,7 @@ public class SpielModel {
   }
 
   /**
-   * minimale Anzahl für Eingabe N vom Spieler
+   * minimale Anzahl fÃ¼r Eingabe N vom Spieler
    * 
    * @return
    */
@@ -60,7 +60,7 @@ public class SpielModel {
   }
 
   public void setStartoptionen(SPIELER_ODER_COMPUTER aktuellerSpieler) {
-    // Spiel zurück setzen
+    // Spiel zurÃ¼ck setzen
     this.restStreichhoelzer = 0;
     this.spielEnde = false;
     // wer soll den ersten Zug machen
@@ -99,17 +99,17 @@ public class SpielModel {
   }
 
   /**
-   * Zug beendet, überprüfen ob das Spiel beendet ist Wenn nicht aktuellen Spieler
+   * Zug beendet, Ã¼berprÃ¼fen ob das Spiel beendet ist Wenn nicht aktuellen Spieler
    * wechseln
    */
   public void spielZugBeenden() {
-    // Sind noch Hölzer im Spiel
+    // Sind noch HÃ¶lzer im Spiel
     if (restStreichhoelzer <= 0) {
-      // keine Hölzer mehr im Spiel
+      // keine HÃ¶lzer mehr im Spiel
       spielEnde = true;
       return;
     } else {
-      // prüfen wer am Zug war
+      // prÃ¼fen wer am Zug war
       if (aktuellerSpieler.equals(SPIELER_ODER_COMPUTER.SPIELER)) {
         // aktuellen Spieler auf PC setzen
         aktuellerSpieler = SPIELER_ODER_COMPUTER.COMPUTER;

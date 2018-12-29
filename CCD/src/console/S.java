@@ -4,7 +4,7 @@
 package console;
 
 /**
- * static Werte f�r die Konsolen View
+ * static Werte für die Konsolen View
  * 
  * @author Tietz
  *

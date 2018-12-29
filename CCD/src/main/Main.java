@@ -17,14 +17,14 @@ import model.SpielModel;
 public class Main {
 
   /**
-   * Variable zum Speichern der �bergabeparameter f�r die Anwendung
+   * Variable zum Speichern der Übergabeparameter für die Anwendung
    */
   private static String[] args = null;
 
   /**
    * Hauptprogrammeinstieg, hier wird der wietere Programmverlauf angegeben.
    * 
-   * @param args Optionale Startparameter f�r die Anwendung
+   * @param args Optionale Startparameter für die Anwendung
    */
   public static void main(String[] args) {
 

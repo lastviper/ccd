@@ -14,7 +14,7 @@ import view.SPIELER_ODER_COMPUTER;
 public class SpielView implements ISpielView {
 
   /**
-   * Standardkonstruktor für die Spiele View
+   * Standardkonstruktor fÃ¼r die Spiele View
    */
   public SpielView() {
     // TODO Auto-generated constructor stub
