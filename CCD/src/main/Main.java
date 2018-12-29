@@ -17,21 +17,21 @@ import model.SpielModel;
 public class Main {
 
   /**
-   * Variable zum Speichern der Übergabeparameter für die Anwendung
+   * Variable zum Speichern der ï¿½bergabeparameter fï¿½r die Anwendung
    */
   private static String[] args = null;
 
   /**
    * Hauptprogrammeinstieg, hier wird der wietere Programmverlauf angegeben.
    * 
-   * @param args Optionale Startparameter für die Anwendung
+   * @param args Optionale Startparameter fï¿½r die Anwendung
    */
   public static void main(String[] args) {
 
     try {
-      // Übergabeparameter setzen
+      // Ãœbergabeparameter setzen
       Main.args = args;
-      // Param auf einen Wert prüfen
+      // Param auf einen Wert prÃ¼fen
       if (Main.args.length >= 1 && Main.args[0].equals(S.HELP)) {
         // hilfe aufrufen
       } else if (Main.args.length == 1 && Main.args[0].equals(S.SWING)) {

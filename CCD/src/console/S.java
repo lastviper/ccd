@@ -4,7 +4,7 @@
 package console;
 
 /**
- * static Werte für die Konsolen View
+ * static Werte fï¿½r die Konsolen View
  * 
  * @author Tietz
  *
@@ -14,7 +14,7 @@ public class S {
   /**
    * 
    */
-  public final static String SPIEL_START = "Das Spiel fängt an! Mit 'q' und Enter kannst du das Spiel jederzeit verlassen.";
+  public final static String SPIEL_START = "Das Spiel fÃ¤ngt an! Mit 'q' und Enter kannst du das Spiel jederzeit verlassen.";
   /**
    * 
    */
@@ -22,7 +22,7 @@ public class S {
   /**
    * 
    */
-  public final static String WER_FAENGT_AN = "Wer soll die Anzahl der Streichhölzer festlegen? 1 für Computer und 2 für Spieler: ";
+  public final static String WER_FAENGT_AN = "Wer soll die Anzahl der StreichhÃ¶lzer festlegen? 1 fÃ¼r Computer und 2 fÃ¼r Spieler: ";
   /**
    * 
    */
@@ -30,7 +30,7 @@ public class S {
   /**
    * 
    */
-  public final static String SPIELER_FAENGT_AN = "Geben Sie bitte die Anzahl Streichhölzer ein: ";
+  public final static String SPIELER_FAENGT_AN = "Geben Sie bitte die Anzahl StreichhÃ¶lzer ein: ";
   /**
    * 
    */
@@ -56,8 +56,8 @@ public class S {
    */
   public static final String ABBRUCH_BENUTZER = "Abbruch durch benutzer.";
   public static final String FEHLER_EINGABE_INTEGER = "Fehlerhafte Eingabe, eine Ganzzahl wurde erwartet.";
-  public static final String SPIELER_EINGABE_ABZIEHEN = "Geben Sie bitte die Anzahl Streichhölzer ein die Abgezogen werden sollen: ";
-  public static final String SPIELER_INFO_ANZAHL_HOELZER = "Aktuelle Anzahl der Streichhölzer: ";
+  public static final String SPIELER_EINGABE_ABZIEHEN = "Geben Sie bitte die Anzahl StreichhÃ¶lzer ein die Abgezogen werden sollen: ";
+  public static final String SPIELER_INFO_ANZAHL_HOELZER = "Aktuelle Anzahl der StreichhÃ¶lzer: ";
   public static final String SPIELER_GEWONNEN = "Haha sehr witzig, Cheater.";
   public static final String COMPUTER_GEWONNEN = "Sie haben leider verloren. Probieren Sie es einfach nochmal.";
   public static final int FEHLER_EINGABE_INT = 0;
