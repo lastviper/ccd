@@ -3,9 +3,12 @@ jdk:
   - oraclejdk8
 script: ant build
 deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN
-  keep-history: true
+  provider: releases
+  user: $GITHUB_USERNAME
+  password: $GITHUB_PASSWORD
+  file_glob: true
+  file: directory/*
+  skip_cleanup: true
   on:
-    branch: master
+    tags: true
+    
